@@ -59,9 +59,10 @@
         .cheetos-chili { background-color: #6a0dad; color: white; }
         .doritos { background-color: #f45c4b; color: white; }
         .cheetos-jalapeno { background-color: #ff8c00; color: white; }
+        .cheetos-tangy { background-color: #ff4500; color: white; }
         .water { background-color: #1e90ff; color: white; }
         .cheeseballs { background-color: #ffa500; color: white; }
-        .pretzels { background-color: #ff4500; color: white; }
+        .pretzels { background-color: #ff6347; color: white; }
         .peanut-butter { background-color: #8b4513; color: white; }
 
         /* Price and product name */
@@ -108,7 +109,7 @@
 <body>
 
 <div class="shop-container">
-    <div class="shop-title">Big back shop</div>
+    <div class="shop-title">Big Back Shop</div>
 
     <div class="product-grid">
         <!-- Flamin hot Cheetos -->
@@ -131,6 +132,38 @@
         <div class="product-card doritos-spicy">
             <div class="price">5 dollars</div>
             <div class="product-name">Doritos spicy sweet chili</div>
+            <div class="unavailable">Unavailable</div>
+            <button class="order-button" onclick="redirectToRainbow()">Order</button>
+        </div>
+
+        <!-- Cheetos chili cheese nachos -->
+        <div class="product-card cheetos-chili">
+            <div class="price">2 dollars</div>
+            <div class="product-name">Cheetos chili cheese nachos</div>
+            <div class="unavailable">Unavailable</div>
+            <button class="order-button" onclick="redirectToRainbow()">Order</button>
+        </div>
+
+        <!-- Doritos (standard) -->
+        <div class="product-card doritos">
+            <div class="price">5 dollars</div>
+            <div class="product-name">Doritos</div>
+            <div class="unavailable">Unavailable</div>
+            <button class="order-button" onclick="redirectToRainbow()">Order</button>
+        </div>
+
+        <!-- Cheetos jalapeno cheese -->
+        <div class="product-card cheetos-jalapeno">
+            <div class="price">2 dollars</div>
+            <div class="product-name">Cheetos jalapeno cheese</div>
+            <div class="unavailable">Unavailable</div>
+            <button class="order-button" onclick="redirectToRainbow()">Order</button>
+        </div>
+
+        <!-- Cheetos tangy -->
+        <div class="product-card cheetos-tangy">
+            <div class="price">3 dollars</div>
+            <div class="product-name">Cheetos tangy</div>
             <div class="unavailable">Unavailable</div>
             <button class="order-button" onclick="redirectToRainbow()">Order</button>
         </div>
