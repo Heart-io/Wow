@@ -25,10 +25,11 @@
         /* Title */
         .shop-title {
             background-color: #90c89e;
-            padding: 10px;
+            padding: 20px;
             font-size: 2em;
             font-weight: bold;
-            border-radius: 10px;
+            border-radius: 20px;
+            margin-bottom: 20px;
         }
 
         /* Product grid */
@@ -36,7 +37,6 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
-            margin-top: 20px;
         }
 
         /* Product card */
@@ -44,7 +44,7 @@
             background-color: #fff;
             padding: 15px;
             border-radius: 20px;
-            color: white;
+            color: black;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -52,16 +52,19 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        /* Product colors */
-        .flamin-hot { background-color: #FF4500; }
-        .ruffles-queso { background-color: #ffd89e; }
-        .doritos-spicy { background-color: #8a2be2; }
-        .cheetos-chili { background-color: #6a0dad; }
-        .doritos { background-color: #f45c4b; }
-        .cheetos-jalapeno { background-color: #ff8c00; }
-        .water { background-color: #1e90ff; }
+        /* Product-specific colors */
+        .flamin-hot { background-color: #FF4500; color: white; }
+        .ruffles-queso { background-color: #ffd89e; color: black; }
+        .doritos-spicy { background-color: #8a2be2; color: white; }
+        .cheetos-chili { background-color: #6a0dad; color: white; }
+        .doritos { background-color: #f45c4b; color: white; }
+        .cheetos-jalapeno { background-color: #ff8c00; color: white; }
+        .water { background-color: #1e90ff; color: white; }
+        .cheeseballs { background-color: #ffa500; color: white; }
+        .pretzels { background-color: #ff4500; color: white; }
+        .peanut-butter { background-color: #8b4513; color: white; }
 
-        /* Text */
+        /* Price and product name */
         .price {
             font-size: 1em;
             font-weight: bold;
@@ -70,9 +73,14 @@
         .product-name {
             font-size: 1.2em;
         }
+
+        /* Availability and status */
         .stock {
             color: #00b300;
             margin: 10px 0;
+        }
+        .unavailable {
+            color: #b22222;
         }
 
         /* Order button */
@@ -107,7 +115,7 @@
         <div class="product-card flamin-hot">
             <div class="price">3 dollars</div>
             <div class="product-name">Flamin hot Cheetos</div>
-            <div class="stock">In stock ✔️</div>
+            <div class="unavailable">Unavailable</div>
             <button class="order-button" onclick="redirectToRainbow()">Order</button>
         </div>
 
@@ -115,7 +123,7 @@
         <div class="product-card ruffles-queso">
             <div class="price">2 dollars</div>
             <div class="product-name">Ruffles queso cheese</div>
-            <div class="stock">In stock ✔️</div>
+            <div class="unavailable">Unavailable</div>
             <button class="order-button" onclick="redirectToRainbow()">Order</button>
         </div>
 
@@ -123,38 +131,38 @@
         <div class="product-card doritos-spicy">
             <div class="price">5 dollars</div>
             <div class="product-name">Doritos spicy sweet chili</div>
-            <div class="stock">In stock ✔️</div>
-            <button class="order-button" onclick="redirectToRainbow()">Order</button>
-        </div>
-
-        <!-- Cheetos tangy chili fusion -->
-        <div class="product-card cheetos-chili">
-            <div class="price">4 dollars</div>
-            <div class="product-name">Cheetos tangy chili fusion</div>
-            <div class="stock">In stock ✔️</div>
-            <button class="order-button" onclick="redirectToRainbow()">Order</button>
-        </div>
-
-        <!-- Doritos -->
-        <div class="product-card doritos">
-            <div class="price">3 dollars</div>
-            <div class="product-name">Doritos</div>
-            <div class="stock">In stock ✔️</div>
-            <button class="order-button" onclick="redirectToRainbow()">Order</button>
-        </div>
-
-        <!-- Cheetos cheddar jalapeño -->
-        <div class="product-card cheetos-jalapeno">
-            <div class="price">2 dollars</div>
-            <div class="product-name">Cheetos cheddar jalapeño</div>
-            <div class="stock">In stock ✔️</div>
+            <div class="unavailable">Unavailable</div>
             <button class="order-button" onclick="redirectToRainbow()">Order</button>
         </div>
 
         <!-- Bottle of water -->
         <div class="product-card water">
-            <div class="price">2 dollars</div>
+            <div class="price">1 dollar</div>
             <div class="product-name">Bottle of water</div>
+            <div class="stock">In stock ✔️</div>
+            <button class="order-button" onclick="redirectToRainbow()">Order</button>
+        </div>
+
+        <!-- 2 Cheeseballs bag -->
+        <div class="product-card cheeseballs">
+            <div class="price">1 dollar</div>
+            <div class="product-name">2 Cheeseballs bag</div>
+            <div class="stock">In stock ✔️</div>
+            <button class="order-button" onclick="redirectToRainbow()">Order</button>
+        </div>
+
+        <!-- Mini pretzels -->
+        <div class="product-card pretzels">
+            <div class="price">1 dollar</div>
+            <div class="product-name">Mini pretzels</div>
+            <div class="stock">In stock ✔️</div>
+            <button class="order-button" onclick="redirectToRainbow()">Order</button>
+        </div>
+
+        <!-- Peanut butter -->
+        <div class="product-card peanut-butter">
+            <div class="price">1 dollar</div>
+            <div class="product-name">Peanut butter</div>
             <div class="stock">In stock ✔️</div>
             <button class="order-button" onclick="redirectToRainbow()">Order</button>
         </div>
